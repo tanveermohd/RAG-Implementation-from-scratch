@@ -20,18 +20,6 @@ This implementation focuses on understanding the **core mechanics of RAG**:
 
 ---
 
-## 🧩 Architecture
-
-```mermaid
-graph LR
-A[📄 Document Corpus] --> B[🧹 Preprocessing & Chunking]
-B --> C[🔍 Retriever (TF-IDF / Semantic Similarity)]
-E[💬 User Query] --> F[🧠 Query Preprocessing]
-F --> C
-C --> G[📄 Retrieve Top-K Relevant Chunks]
-G --> H[🤖 LLaMA2 (via Ollama)]
-H --> I[🧠 Context-Augmented Response]
-
 ### 📈 Key Features
 
 - ✅ No external vector database — pure Python-based retrieval.
